@@ -8,7 +8,7 @@
 | Папка           | Содержание |
 |-----------------|------------|
 | `src/`         | Код проекта (`*.py`) |
-| `bug reports_/`         | Баг-репорты (`bug_reports.md`) |
+| `bug reports_/`         | • Баг-репорты (`bug_reports.md`) <br>• Папка `attachments/` с вложениями |
 | `tests/`         | Тестовая документация: <br>• `test_plan.md` <br>• `test_cases.md` <br>• `checklist.md` <br>• `test_report.md` |
 
 ---
