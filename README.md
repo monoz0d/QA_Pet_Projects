@@ -9,7 +9,7 @@
 |-----------------|------------|
 | `src/`         | Код проекта (`*.py`) |
 | `bug reports_/`         | • Баг-репорты (`bug_reports.md`) <br>• Папка `attachments/` с вложениями |
-| `tests/`         | Тестовая документация: <br>• `test_plan.md` <br>• `test_cases.md` <br>• `checklist.md` <br>• `test_report.md` |
+| `tests/`         | Тестовая документация: <br>• `requirements.md`<br>• `test_plan.md` <br>• `test_cases.md` <br>• `checklist.md` <br>• `test_report.md` |
 
 ---
 
@@ -29,7 +29,7 @@
 ## Планы на развитие репозитория
 
 ### Тест-дизайн
-- Привести все тест-кейсы к единообразию 
+- Добавить матрицу трассировки требований 
 - Показать в проектах больше техник тестирования и методов тест-дизайна:  
   - Pairwise Testing  
   - Decision Table Testing  
