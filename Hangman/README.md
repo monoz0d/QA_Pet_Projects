@@ -29,3 +29,15 @@
 Слово: _А__ 
 Буквы: ['А']
 ```
+## Тестирование
+- Тест-план: [test_plan.md](hangman/tests/test_plan.md)
+- Тест-кейсы: [test_cases.md](hangman/tests/test_cases.md)
+- Чек-лист: [checklist.md](hangman/tests/checklist.md)
+- Баг-репорты: [bug_reports.md](hangman/bug_reports/bug_reports.md)
+- Найдено багов: 0
+- Статус: тестирование завершено
+
+## Запуск
+```bash
+python src/nangman.py
+```

@@ -37,3 +37,15 @@
 
 Возвращайся, если возникнут вопросы!
 ```
+## Тестирование
+- Тест-план: [test_plan.md](magic_8/tests/test_plan.md)
+- Тест-кейсы: [test_cases.md](magic_8/tests/test_cases.md)
+- Чек-лист: [checklist.md](magic_8/tests/checklist.md)
+- Баг-репорты: [bug_reports.md](magic_8/bug_reports/bug_reports.md)
+- Найдено багов: 3 (BUG-001, BUG-002, BUG-003)
+- Статус: тестирование завершено
+
+## Запуск
+```bash
+python src/magic_8.py
+```
