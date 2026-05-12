@@ -68,7 +68,7 @@ IndexError: Cannot choose from an empty sequence
 
 ## Вложения
 
-![Скриншот консоли](./attachments/Снимок%20экрана%202026-03-27%20144455.png)
+![Скриншот консоли](./attachments/bug_001.png)
 
 ## Статус
 
@@ -154,7 +154,7 @@ ValueError: invalid literal for int() with base 10: 'test'
 
 ## Вложения
 
-![Скриншот консоли](./attachments/Снимок%20экрана%202026-03-27%20144622.png)
+![Скриншот консоли](./attachments/bug_002.png)
 
 ## Статус
 
@@ -239,7 +239,7 @@ ValueError: invalid literal for int() with base 10: 'abc'
 
 ## Вложения
 
-![Скриншот консоли](./attachments/Снимок%20экрана%202026-03-27%20144749.png)
+![Скриншот консоли](./attachments/bug_003.png)
 
 ## Статус
 

@@ -79,7 +79,7 @@ ValueError: invalid literal for int() with base 10: 'да'
 
 ## Вложения
 
-![Скриншот консоли](./attachments/Снимок%20экрана%202026-03-27%20141850.png) 
+![Скриншот консоли](./attachments/bug_001.png) 
 
 ---
 
@@ -175,7 +175,7 @@ ValueError: empty range in randrange(1, -2)
 
 ## Вложения
 
-![Скриншот консоли](./attachments/Снимок%20экрана%202026-03-27%20142146.png)
+![Скриншот консоли](./attachments/bug_002.png)
 
 ---
 
@@ -269,7 +269,7 @@ ValueError: invalid literal for int() with base 10: ''
 
 ## Вложения
 
-![Скриншот консоли](./attachments/Снимок%20экрана%202026-03-27%20142634.png)
+![Скриншот консоли](./attachments/bug_003.png)
 
 ---
 
