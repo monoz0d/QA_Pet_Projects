@@ -58,11 +58,11 @@
 2n^x6r!m
 ```
 ## Тестирование
-- Тест-план: [test_plan.md](safe_password_generator/tests/test_plan.md)
-- Тест-кейсы: [test_cases.md](safe_password_generator/tests/test_cases.md)
-- Чек-лист: [checklist.md](safe_password_generator/tests/checklist.md)
-- Баг-репорты: [bug_reports.md](safe_password_generator/bug_reports/bug_reports.md)
-- Найдено багов: 3 (BUG-001, BUG-002, BUG-003)
+- Тест-план: [test_plan.md](./tests/test_plan.md)
+- Тест-кейсы: [test_cases.md](./tests/test_cases.md)
+- Чек-лист: [checklist.md](./tests/checklist.md)
+- Баг-репорты: [bug_reports.md](./bug_reports/bug_reports.md)
+- Найдено багов: 4 (BUG-001, BUG-002, BUG-003, BUG-004)
 - Статус: тестирование завершено
 
 ## Запуск

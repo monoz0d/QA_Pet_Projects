@@ -46,7 +46,7 @@ IndexError: Cannot choose from an empty sequence
 
 ## Окружение
 
-* Среда: Dev (локальныя среда)  
+* Среда: Dev (локальная среда)  
 * Язык: Python 3.14
 * Тип приложения: консольное
 
@@ -132,7 +132,7 @@ ValueError: invalid literal for int() with base 10: 'test'
 
 ## Окружение
 
-* Среда: Dev (локальныя среда)  
+* Среда: Dev (локальная среда)  
 * Язык: Python 3.14
 * Тип приложения: консольное
 
@@ -217,7 +217,7 @@ ValueError: invalid literal for int() with base 10: 'abc'
 
 ## Окружение
 
-* Среда: Dev (локальныя среда)  
+* Среда: Dev (локальная среда)  
 * Язык: Python 3.14
 * Тип приложения: консольное
 
