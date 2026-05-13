@@ -51,7 +51,7 @@ ValueError: invalid literal for int() with base 10: 'да'
 
 ## Окружение
 
-* Среда: Dev / Staging
+* Среда: Dev (локальныя среда)  
 * Язык: Python 3.14
 * Тип приложения: консольное
 
@@ -147,7 +147,7 @@ ValueError: empty range in randrange(1, -2)
 
 ## Окружение
 
-* Среда: Dev / Staging
+* Среда: Dev (локальныя среда)  
 * Язык: Python 3.14
 * Тип приложения: консольное
 
@@ -241,7 +241,7 @@ ValueError: invalid literal for int() with base 10: ''
 
 ## Окружение
 
-* Среда: Dev / Staging
+* Среда: Dev (локальныя среда)  
 * Язык: Python 3.14
 * Тип приложения: консольное
 
