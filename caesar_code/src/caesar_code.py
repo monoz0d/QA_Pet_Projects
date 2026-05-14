@@ -18,15 +18,22 @@ def verify(prompt, choices, error):
         if user_input in choices:
             return user_input
         print(error)
-def shift_verify(answer):
+def shift_verify(answer, lang_len):
     while True:
-        if answer.isdigit():
-            shift = int(answer) % len(lang)
+        try:
+            shift = int(answer)
+            shift = shift % lang_len
             return shift, shift
-        elif answer.lower() == 'д':
-            return int(input('Введите левую границу диапазона: ')), int(input('Введите правую границу диапазона: '))
-        else:
-            answer = input('Некорректный ввод шага сдвига, попробуйте еще раз: ')
+        except ValueError:
+            if answer.lower() == 'д':
+                try:
+                    left = int(input("Введите левую границу диапазона: "))
+                    right = int(input("Введите правую границу диапазона: "))
+                    return left, right
+                except ValueError:
+                    answer = input("Некорректный ввод диапазона, попробуйте еще раз: ")
+            else:
+                answer = input("Некорректный ввод шага сдвига, попробуйте еще раз: ")
 def caesar_code(mode):
     if mode == '1':
         return crypt(text, lang, first_step, shft + 1, 1)
@@ -34,8 +41,12 @@ def caesar_code(mode):
         return crypt(text, lang, - first_step, - shft - 1, - 1)
 en = 'abcdefghijklmnopqrstuvwxyz'
 ru = 'абвгдежзийклмнопрстуфхцчшщъыьэюя'
-text = input('Введите исходный текст: ')
-do = verify("Шифрование или дешифрование? 1 - шифр., 2 - дешифр.: ", ['1', '2'], 'Некорректный ввод режима, попробуйте еще раз: ')
-lang = en if verify("Английский или русский? 1 - англ., 2 - рус.: ", ['1', '2'], 'Некорректный ввод языка, попробуйте еще раз: ') == 1 else ru
-first_step, shft = shift_verify(input('Укажите шаг сдвига (Если диапазон - укажите "д"): '))
-caesar_code(do)
+def main():
+    global text, lang, first_step, shft
+    text = input('Введите исходный текст: ')
+    do = verify("Шифрование или дешифрование? 1 - шифр., 2 - дешифр.: ", ['1', '2'], 'Некорректный ввод режима, попробуйте еще раз: ')
+    lang = en if verify("Английский или русский? 1 - англ., 2 - рус.: ", ['1', '2'], 'Некорректный ввод языка, попробуйте еще раз: ') == '1' else ru
+    first_step, shft = shift_verify(input('Укажите шаг сдвига (Если диапазон - укажите "д"): '), len(lang))
+    caesar_code(do)
+if __name__=="__main__":
+    main()

@@ -30,12 +30,13 @@
 ```
 
 ## Тестирование
-- Тест-план: [test_plan.md](caesar_code/tests/test_plan.md)
-- Тест-кейсы: [test_cases.md](caesar_code/tests/test_cases.md)
-- Чек-лист: [checklist.md](caesar_code/tests/checklist.md)
-- Баг-репорты: [bug_reports.md](caesar_code/bug_reports/bug_reports.md)
-- Найдено багов: 1 (BUG-001)
-- Статус: тестирование завершено
+- Тест-план: [test_plan.md](./tests/test_plan.md)
+- Тест-кейсы: [test_cases.md](./tests/test_cases.md)
+- Чек-лист: [checklist.md](./tests/checklist.md)
+- Баг-репорты: [bug_reports.md](./bug_reports/bug_reports.md)
+- Матрица трассируемости: [traceability_matrix.md](./tests/traceability_matrix.md)
+- Найдено багов: 2 (BUG-001, BUG-002)
+- Статус: тестирование завершено, все дефекты устранены
 
 ## Запуск
 ```bash
