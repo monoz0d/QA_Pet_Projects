@@ -113,4 +113,5 @@ def play(word):
     if '_' not in word_progress:
         return '🎉 Вы победили!'
     return f'💀 Вы проиграли. Слово было: {word}'
-print(play(get_word()))
+if __name__ == '__main__':
+    print(play(get_word()))

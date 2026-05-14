@@ -11,11 +11,11 @@
 - Обработка ошибок при повторном вводе
 
 ## Как играть
-1. Запустить скрипт  hangman.py
+1. Запустить скрипт hangman.py
 2. Следовать подсказкам:
-* Вводите букву или слово
-* Программа покажет текущее состояние слова
-* Попытки уменьшаются при неверных догадках
+   * Вводите букву или слово
+   * Программа покажет текущее состояние слова
+   * Попытки уменьшаются при неверных догадках
 3. Игра заканчивается победой (угадали слово) или проигрышем (закончились попытки)
 ## Пример игры
 ```text
@@ -30,14 +30,15 @@
 Буквы: ['А']
 ```
 ## Тестирование
-- Тест-план: [test_plan.md](hangman/tests/test_plan.md)
-- Тест-кейсы: [test_cases.md](hangman/tests/test_cases.md)
-- Чек-лист: [checklist.md](hangman/tests/checklist.md)
-- Баг-репорты: [bug_reports.md](hangman/bug_reports/bug_reports.md)
+- Тест-план: [test_plan.md](./tests/test_plan.md)
+- Тест-кейсы: [test_cases.md](./tests/test_cases.md)
+- Чек-лист: [checklist.md](./tests/checklist.md)
+- Баг-репорты: [bug_reports.md](./bug_reports/bug_reports.md)
+- Матрица трассируемости: [traceability_matrix.md](./tests/traceability_matrix.md)
 - Найдено багов: 0
-- Статус: тестирование завершено
+- Статус: тестирование завершено, дефектов не выявлено
 
 ## Запуск
 ```bash
-python src/nangman.py
+python src/hangman.py
 ```
