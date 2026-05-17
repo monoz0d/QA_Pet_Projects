@@ -57,7 +57,7 @@ ValueError: invalid literal for int() with base 10: 'да'
 
 ---
 
-## Severity
+## Серьезность
 
 Высокая
 
@@ -67,7 +67,7 @@ ValueError: invalid literal for int() with base 10: 'да'
 
 ---
 
-## Priority
+## Приоритет
 
 Высокая
 
@@ -85,7 +85,7 @@ ValueError: invalid literal for int() with base 10: 'да'
 
 ## Статус
 
-Open
+Fixed
 
 ---
 
@@ -153,7 +153,7 @@ ValueError: empty range in randrange(1, -2)
 
 ---
 
-## Severity
+## Серьезность
 
 Высокая
 
@@ -163,7 +163,7 @@ ValueError: empty range in randrange(1, -2)
 
 ---
 
-## Priority
+## Приоритет
 
 Высокая
 
@@ -181,7 +181,7 @@ ValueError: empty range in randrange(1, -2)
 
 ## Статус
 
-Open
+Fixed
 
 ---
 
@@ -247,7 +247,7 @@ ValueError: invalid literal for int() with base 10: ''
 
 ---
 
-## Severity
+## Серьезность
 
 Высокая
 
@@ -257,7 +257,7 @@ ValueError: invalid literal for int() with base 10: ''
 
 ---
 
-## Priority
+## Приоритет
 
 Высокая
 
@@ -275,7 +275,7 @@ ValueError: invalid literal for int() with base 10: ''
 
 ## Статус
 
-Open
+Fixed
 
 ---
 

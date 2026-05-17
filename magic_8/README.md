@@ -42,8 +42,9 @@
 - Тест-кейсы: [test_cases.md](./tests/test_cases.md)
 - Чек-лист: [checklist.md](./tests/checklist.md)
 - Баг-репорты: [bug_reports.md](./bug_reports/bug_reports.md)
+- Матрица трассируемости: [traceability_matrix.md](./tests/traceability_matrix.md)
 - Найдено багов: 3 (BUG-001, BUG-002, BUG-003)
-- Статус: тестирование завершено
+- Статус: тестирование завершено, все дефекты устранены
 
 ## Запуск
 ```bash

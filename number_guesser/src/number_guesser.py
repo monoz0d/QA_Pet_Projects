@@ -1,17 +1,31 @@
 from random import randrange
 def is_valid(num, border):
-    return 1 <= int(num) <= border
-print('Добро пожаловать в числовую угадайку')
-while True:
-    z = int(input('Введите правую границу диапазона: '))
-    x = randrange(1,z+1)
-    counter = 1
+    try:
+        num = int(num)
+        return 1 <= num <= border
+    except ValueError:
+        return False
+def get_border():
     while True:
-        n = input(f'Введите число от 1 до {z}: ')
-        if not is_valid(n, z):
-            print(f'А может быть все-таки введем целое число от 1 до {z}')
-            continue
-        else:
+        border = input('Введите правую границу диапазона: ')
+        try:
+            border = int(border)
+            if border > 1:
+                return border
+            print("Граница должна быть больше 1")
+        except ValueError:
+            print('Ошибка: введите целое число')
+def main():
+    print('Добро пожаловать в числовую угадайку')
+    while True:
+        z = get_border()
+        x = randrange(1,z+1)
+        counter = 1
+        while True:
+            n = input(f'Введите число от 1 до {z}: ')
+            if not is_valid(n, z):
+                print(f'А может быть все-таки введем целое число от 1 до {z}')
+                continue
             n = int(n)
             if n < x:
                 counter += 1
@@ -19,13 +33,13 @@ while True:
             elif n > x:
                 counter += 1
                 print('Ваше число больше загаданного, попробуйте еще разок')
-            elif n == x:
+            else:
                 print('Вы угадали, поздравляем!')
                 print('Количество попыток:', counter)
                 break
-    y = input('Хотите сыграть еще раз? ')
-    if y.lower() == 'да':
-        continue
-    else:
-        print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
-        break
+        y = input('Хотите сыграть еще раз? ')
+        if y.lower() != 'да':
+            print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
+            break
+if __name__ == '__main__':
+    main()
