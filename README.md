@@ -1,4 +1,7 @@
 # 📂 QA Pet Projects
+
+![Tests](https://github.com/monoz0d/QA_Pet_Projects/actions/workflows/tests.yml/badge.svg)
+
 **Автор:** Никита Калашников
 
 **Цель репозитория:** Демонстрация навыков ручного тестирования, оформления тестовой документации и базового программирования на Python
