@@ -1,0 +1,151 @@
+{
+  "info": {
+    "name": "JSONPlaceholder API",
+    "description": "Коллекция запросов для тестирования публичного REST API JSONPlaceholder. Покрывает CRUD операции для ресурсов Users, Posts и Todos.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "GET All Users",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/users",
+            "description": "Получение списка всех пользователей. Ожидаемый результат: статус 200 OK, массив из 10 пользователей."
+          }
+        },
+        {
+          "name": "GET User by ID",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/users/1",
+            "description": "Получение данных конкретного пользователя по ID. Ожидаемый результат: статус 200 OK, объект с данными пользователя."
+          }
+        },
+        {
+          "name": "GET Non-existent User",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/users/999",
+            "description": "Негативный тест: запрос несуществующего пользователя. Ожидаемый результат: статус 404 Not Found, пустой объект {}."
+          }
+        },
+        {
+          "name": "POST Create User",
+          "request": {
+            "method": "POST",
+            "url": "{{base_url}}/users",
+            "description": "Создание нового пользователя. Ожидаемый результат: статус 201 Created, объект с данными и новым ID.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Никита Калашников\",\n  \"username\": \"monoz0d\",\n  \"email\": \"nikita@example.com\",\n  \"phone\": \"8-800-555-35-35\",\n  \"website\": \"github.com/monoz0d\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "PUT Update User",
+          "request": {
+            "method": "PUT",
+            "url": "{{base_url}}/users/1",
+            "description": "Полное обновление данных пользователя с ID=1. Ожидаемый результат: статус 200 OK, обновлённый объект.",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": 1,\n  \"name\": \"Никита Калашников Updated\",\n  \"username\": \"monoz0d\",\n  \"email\": \"nikita.updated@example.com\",\n  \"phone\": \"8-800-555-35-35\",\n  \"website\": \"github.com/monoz0d\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "DELETE User",
+          "request": {
+            "method": "DELETE",
+            "url": "{{base_url}}/users/1",
+            "description": "Удаление пользователя с ID=1. Ожидаемый результат: статус 200 OK, пустой объект {}."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Posts",
+      "item": [
+        {
+          "name": "GET All Posts",
+          "request": {
+            "method": "GET",
+            "url": "{{base_url}}/posts",
+            "description": "Получение списка всех постов. Ожидаемый результат: статус 200 OK, массив из 100 постов."
+          }
+        },
+        {
+          "name": "GET Posts by User",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/posts?userId=1",
+              "query": [
+                {
+                  "key": "userId",
+                  "value": "1",
+                  "description": "ID пользователя для фильтрации постов"
+                }
+              ]
+            },
+            "description": "Получение постов конкретного пользователя через параметр userId. Ожидаемый результат: статус 200 OK, массив из 10 постов."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Todos",
+      "item": [
+        {
+          "name": "GET Completed Todos",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{base_url}}/todos?completed=true",
+              "query": [
+                {
+                  "key": "completed",
+                  "value": "true",
+                  "description": "Фильтр по статусу выполнения задачи"
+                }
+              ]
+            },
+            "description": "Получение выполненных задач. Ожидаемый результат: статус 200 OK, массив выполненных задач."
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://jsonplaceholder.typicode.com",
+      "description": "Базовый URL JSONPlaceholder API"
+    }
+  ]
+}
