@@ -10,9 +10,9 @@ def get_border():
         border = input('Введите правую границу диапазона: ')
         try:
             border = int(border)
-            if border > 1:
+            if border >= 1:
                 return border
-            print("Граница должна быть больше 1")
+            print("Граница должна быть больше или равна 1")
         except ValueError:
             print('Ошибка: введите целое число')
 def main():

@@ -64,5 +64,5 @@ pip install -r requirements.txt
 ```
 
 ## Стек
-Postman (ручное тестирование API)
-Python + pytest + requests (автоматизация)
+- Postman (ручное тестирование API)
+- Python + pytest + requests (автоматизация)

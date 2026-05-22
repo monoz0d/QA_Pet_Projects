@@ -1,5 +1,6 @@
 {
   "info": {
+    "_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
     "name": "JSONPlaceholder API",
     "description": "Коллекция запросов для тестирования публичного REST API JSONPlaceholder. Покрывает CRUD операции для ресурсов Users, Posts и Todos.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"

@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 from safe_password_generator import generate_password, verify
-class TestPasswordGenerator:
+class TestGeneratePassword:
     """Тесты для функции generate_password"""
     def test_password_has_correct_length(self):
         """Пароль должен иметь длину, которую мы указали."""
@@ -22,7 +22,7 @@ class TestPasswordGenerator:
         for char in password:
             assert char in chars
     def test_password_contains_only_uppercase(self):
-        """Если передали только прописные буквы - в пароле только просписные"""
+        """Если передали только прописные буквы - в пароле только прописные"""
         chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
         password = generate_password(10, chars)
         for char in password:

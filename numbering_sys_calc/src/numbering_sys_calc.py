@@ -6,7 +6,9 @@ def calc_10(number, base):
         new_number = new_number * base + digits.index(char)
     return new_number
 def calc_n(number, base):
-    if base == 2:
+    if number ==0:
+        return '0'
+    elif base == 2:
         return bin(number)[2:]
     elif base == 8:
         return oct(number)[2:]

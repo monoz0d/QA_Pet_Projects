@@ -95,6 +95,6 @@ pytest safe_password_generator/tests/test_password_generator.py -v
 ```
 
 ### Результат последнего прогона
-- Всего тестов: 20
-- Пройдено: 20
+- Всего тестов: 26
+- Пройдено: 26
 - Провалено: 0
